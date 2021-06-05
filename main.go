@@ -5,5 +5,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello")
+	var hello = "Hello"
+	//var helloArr = []rune(hello)
+	fmt.Println(hello[4])
 }

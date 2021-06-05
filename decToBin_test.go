@@ -21,9 +21,15 @@ func TestResultOne(t *testing.T) {
 	assert.Equal(t, nil, err, "Error should be nil")
 }
 
+func TestResultTwo(t *testing.T) {
+	shouldBe8, err := decToBin(2)
+	assert.Equal(t, "10", shouldBe8, "2 in binary should be 10")
+	assert.Equal(t, nil, err, "Error should be nil")
+}
+
 func TestResultEight(t *testing.T) {
 	shouldBe8, err := decToBin(8)
-	assert.Equal(t, "10", shouldBe8, "2 in binary should be 10")
+	assert.Equal(t, "1000", shouldBe8, "2 in binary should be 10")
 	assert.Equal(t, nil, err, "Error should be nil")
 }
 
@@ -35,7 +41,7 @@ func TestResult1024(t *testing.T) {
 
 func TestResult6278956(t *testing.T) {
 	shouldBe6278956, err := decToBin(6278956)
-	assert.Equal(t, "010111111100111100101100", shouldBe6278956, "6278956 in binary should be 010111111100111100101100")
+	assert.Equal(t, "10111111100111100101100", shouldBe6278956, "6278956 in binary should be 10111111100111100101100")
 	assert.Equal(t, nil, err, "Error should be nil")
 }
 
