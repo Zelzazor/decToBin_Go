@@ -14,9 +14,9 @@ func decToBin(number int) (string, error) {
 		var result = ""
 		var char = ""
 		for number > 0 {
-			char = strconv.Itoa(number % 2)
+			char = strconv.Itoa(number & 1)
 			result = char + result
-			number /= 2
+			number = number >> 1
 		}
 
 		return result, nil
